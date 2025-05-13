@@ -15,7 +15,7 @@ return new class extends Migration
         $table->id();
         $table->foreignId('warehouse_id')->constrained('warehouses');
         $table->foreignId('feature_id')->constrained('warehouse_features');
-        $table->string('value')->nullable(); // Optional, e.g. 2-8°C
+        $table->string('value')->nullable(); 
         $table->timestamps();
     });
 }

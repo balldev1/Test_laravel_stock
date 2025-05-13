@@ -102,3 +102,29 @@ php artisan make:model SalesOrderItem
 php artisan make:model ReservationProduct
 php artisan make:model ShippingProvider
 php artisan make:model ShippingQuote
+
+<!-- seeder -->
+
+php artisan db:seed
+php artisan db:seed --class=WarehouseSeeder
+php artisan make:seeder WarehouseSeeder
+php artisan make:seeder WarehouseFeatureSeeder
+php artisan make:seeder WarehouseFeatureAssignmentSeeder
+php artisan make:seeder ZoneSeeder
+php artisan make:seeder ZoneFeatureSeeder
+php artisan make:seeder ZoneFeatureAssignmentSeeder
+php artisan make:seeder SupplierSeeder
+php artisan make:seeder ProductSeeder
+php artisan make:seeder ProductSupplierAssignmentSeeder
+php artisan make:seeder LocationSeeder
+php artisan make:seeder LocationProductSeeder
+php artisan make:seeder StockMovementSeeder
+php artisan make:seeder StockMovementItemSeeder
+php artisan make:seeder PurchaseOrderSeeder
+php artisan make:seeder PurchaseOrderItemSeeder
+php artisan make:seeder CustomerSeeder
+php artisan make:seeder SalesOrderSeeder
+php artisan make:seeder SalesOrderItemSeeder
+php artisan make:seeder ReservationProductSeeder
+php artisan make:seeder ShippingProviderSeeder
+php artisan make:seeder ShippingQuoteSeeder
