@@ -80,3 +80,25 @@ php artisan make:migration shipping_providers --create=shipping_providers
 php artisan make:migration shipping_quotes --create=shipping_quotes
 
 <!-- Modal_database   -->
+
+php artisan make:model Warehouse
+php artisan make:model WarehouseFeature
+php artisan make:model WarehouseFeatureAssignment
+php artisan make:model Zone
+php artisan make:model ZoneFeature
+php artisan make:model ZoneFeatureAssignment
+php artisan make:model Supplier
+php artisan make:model Product
+php artisan make:model ProductSupplierAssignment
+php artisan make:model Location
+php artisan make:model LocationProduct
+php artisan make:model StockMovement
+php artisan make:model StockMovementItem
+php artisan make:model PurchaseOrder
+php artisan make:model PurchaseOrderItem
+php artisan make:model Customer
+php artisan make:model SalesOrder
+php artisan make:model SalesOrderItem
+php artisan make:model ReservationProduct
+php artisan make:model ShippingProvider
+php artisan make:model ShippingQuote
