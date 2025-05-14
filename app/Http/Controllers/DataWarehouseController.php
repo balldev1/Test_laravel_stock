@@ -8,12 +8,15 @@ class DataWarehouseController extends Controller
 {
     public function index(): JsonResponse
     {
+        // ใช้ select เฉพาะคอลัมน์ที่ต้องการในแต่ละ relation เพื่อเพิ่มประสิทธิภาพ
         $products = Product::with([
             'locationProducts.location.zone.warehouse',
             'locationProducts.location.zone.featureAssignments.feature',
             'locationProducts.location.zone.warehouse.featureAssignments.feature',
             'suppliers',
-        ])->get();
+        ])
+        ->select('id', 'sku', 'type', 'barcode', 'source', 'production_date', 'expiration_date', 'price')  // Select เฉพาะคอลัมน์ที่ต้องการจาก Product
+        ->get();
 
         // แปลงข้อมูลให้อยู่ในโครงสร้างที่ต้องการ
         $data = $products->map(function ($product) {

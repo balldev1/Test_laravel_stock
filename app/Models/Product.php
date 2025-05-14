@@ -12,6 +12,8 @@ class Product extends Model
         'expiration_date', 'supplier_id', 'price'
     ];
 
+    public $timestamps = false;
+
     public function suppliers()
     {
         return $this->hasMany(ProductSupplierAssignment::class);

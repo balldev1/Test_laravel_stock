@@ -132,6 +132,7 @@ php artisan make:seeder ShippingQuoteSeeder
 <!-- controller -->
 
 php artisan make:controller DataWarehouseController
+php artisan make:controller ProductAllocationController
 
 <!-- resource -->
 

@@ -9,6 +9,9 @@ class LocationProduct extends Model
 {
    protected $fillable = ['location_id', 'product_id', 'quantity', 'unit', 'batch_no', 'expiration_date'];
 
+
+    public $timestamps = false;
+    
     public function location()
     {
         return $this->belongsTo(Location::class);
