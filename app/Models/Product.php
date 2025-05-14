@@ -16,4 +16,9 @@ class Product extends Model
     {
         return $this->hasMany(ProductSupplierAssignment::class);
     }
+
+      public function locationProducts()
+    {
+        return $this->hasMany(LocationProduct::class);
+    }
 }

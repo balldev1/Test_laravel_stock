@@ -128,3 +128,15 @@ php artisan make:seeder SalesOrderItemSeeder
 php artisan make:seeder ReservationProductSeeder
 php artisan make:seeder ShippingProviderSeeder
 php artisan make:seeder ShippingQuoteSeeder
+
+<!-- controller -->
+
+php artisan make:controller DataWarehouseController
+
+<!-- resource -->
+
+php artisan make:resource WarehouseResource
+php artisan make:resource ZoneResource
+php artisan make:resource LocationResource
+php artisan make:resource ProductResource
+php artisan make:resource ProductSupplierAssignmentResource

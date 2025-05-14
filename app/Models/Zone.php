@@ -14,7 +14,7 @@ class Zone extends Model
         return $this->belongsTo(Warehouse::class);
     }
 
-    public function features()
+    public function featureAssignments()
     {
         return $this->hasMany(ZoneFeatureAssignment::class);
     }

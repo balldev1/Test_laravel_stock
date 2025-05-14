@@ -9,7 +9,7 @@ class Warehouse extends Model
 {
     protected $fillable = ['code', 'name', 'address', 'type'];
 
-    public function features()
+    public function featureAssignments()
     {
         return $this->hasMany(WarehouseFeatureAssignment::class);
     }
